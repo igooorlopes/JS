@@ -6,15 +6,14 @@
 
     <body>
         <script>
-            function exibeAlgo(){
-                console.log('Hello World');
-            }
-
-            //setInterval(exibeAlgo, 1000)
-            //caso coloque o parenteses vai pedir para executar apenas 1x
-            //o numero e o delay em miliseguindos
-
-            setTimeout(exibeAlgo, 500)
-           </script>
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                UF: "SP"
+            };
+                console.log("O usuário mora em " + endereco.cidade + "/" + endereco.UF + ", no bairro " + endereco.bairro + ", na rua " + endereco.rua + "com n " + endereco.numero + ".")
+        </script>
         </body>
 </html>
