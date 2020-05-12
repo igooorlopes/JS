@@ -6,22 +6,17 @@
     <body>
         <script>
           function retornaSexo(sexo) {
-            // M, F
-            // Masculino, Feminino
-            // = incluindo valor dentro de uma variavel
-            // == verificacao dos valores
-            // === faz a verificacao dos valores e o tipo
-
-            if (sexo === 'M') {
-              return 'Masculino';  
-            } else if (sexo === 'F') {
-                return 'Feminino';
-            } else {
-                return 'outro';
-            }
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro';
+          }
           }
 
-          var resultado = retornaSexo('F');
+          var resultado = retornaSexo('aopskasp');
           console.log(resultado)
            </script>
         </body>
