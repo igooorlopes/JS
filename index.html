@@ -6,12 +6,29 @@
 
     <body>
         <div id="app">
-           <input onkeypress="mostraAlerta()" />
+           <input type="text" name="nome" id="nome"/>
+           <button class="botao">Adicionar</button>
+        </div>
 
         <script>
-           function mostraAlerta() {
-           alert('Botão foi clicado');
-           }
+           //var inputElement = document.getElementById('nome');
+           //var inputElement = document.getElementsByTagName('input')para puxar somente aquela linha[0];
+           //var inputElement = document.getElementsByClassName('input')[0];
+
+            //para buscar elementos na tela
+            //var inputElement = document.querySelector('div#app input');
+            //var inputElement = document.querySelector('input[name=nome]')
+            //var inputElement = document.querySelectorall('input')
+
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.bota');
+
+            btnElement.onclick = function() {
+                var text = inputElement.value;
+                alert(text);
+            }
+
+           console.log(inputElement);
         </script>
         </body>
 </html>
